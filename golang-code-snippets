@@ -1,0 +1,84 @@
+{
+	"get-swag": {
+		"scope": "golang,go",
+		"prefix": "get-swag",
+		"body": [
+			"// @Router /v1/$1/{$2} [get]",
+			"// @Summary API to get a single $1",
+			"// @Tags $1",
+			"// @Accept json",
+			"// @Produce json",
+			"// @Param $2 path string true \"$1-$2\"",
+			"// @Param lang query string true \"lang - $1's lang\"",
+			"// @Success 200 {object} $3",
+			"// @Failure 400 {object} models.ResponseError",
+			"// @Failure 500 {object} models.ResponseError"
+		],
+		"description": "Swagger code snippet for get request endpoint"
+	},
+	"get-all-swag": {
+		"scope": "golang,go",
+		"prefix": "get-all-swag",
+		"body": [
+			"// @Router /v1/$1 [get]",
+			"// @Summary API to get list of $1",
+			"// @Tags $1",
+			"// @Accept json",
+			"// @Produce json",
+			"// @Param filter query $2 false \"filter-model\"",
+			"// @Success 200 {object} $3",
+			"// @Failure 400 {object} models.ResponseError",
+			"// @Failure 500 {object} models.ResponseError"
+		],
+		"description": "Swagger code snippet for - get all request endpoint"
+	},
+	"post-swag": {
+		"scope": "golang,go",
+		"prefix": "post-swag",
+		"body": [
+			"// @Router /v1/$1 [post]",
+			"// @Summary API to create $1",
+			"// @Tags $1",
+			"// @Accept json",
+			"// @Produce json",
+			"// @Param payload body $2 true \"$1-$2\"",
+			"// @Success 200 {object} models.Response",
+			"// @Failure 400 {object} models.ResponseError",
+			"// @Failure 500 {object} models.ResponseError"
+		],
+		"description": "Swagger code snippet for post request endpoint"
+	},
+	"put-swag": {
+		"scope": "golang,go",
+		"prefix": "put-swag",
+		"body": [
+			"// @Router /v1/$1/{$2} [put]",
+			"// @Summary API to update $1",
+			"// @Tags $1",
+			"// @Accept  json",
+			"// @Produce  json",
+			"// @Param $2 path string true \"$1-$2\"",
+			"// @Param $1 body $3 true \"$1\"",
+			"// @Success 200 {object} models.Response",
+			"// @Failure 404 {object} models.ResponseError",
+			"// @Failure 500 {object} models.ResponseError"
+		],
+		"description": "Swagger code snippet for post request endpoint"
+	},
+	"delete-swag": {
+		"scope": "golang,go",
+		"prefix": "delete-swag",
+		"body": [
+			"// @Router /v1/$1/{$2} [delete]",
+			"// @Summary API to delete $1",
+			"// @Tags $1",
+			"// @Accept json",
+			"// @Produce json",
+			"// @Param $2 path string true \"$1 $2\"",
+			"// @Success 200 {object} models.Response",
+			"// @Failure 400 {object} models.ResponseError",
+			"// @Failure 500 {object} models.ResponseError"
+		],
+		"description": "Swagger code snippet for delete request endpoint"
+	},
+}
